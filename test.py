@@ -1,24 +1,24 @@
-spnsh = {"mirar":"to watch","sacar":"to take","esperar":"to wait or to hope","invitar":"to invite","buscar":"to look for","predicar":"to preach","ensenar":"to teach","tocar":"to play(intrument,etc.)","jugar":"to play(game,etc.)","senular":"to signal","reservar":"to reserve"}
-word = ""
-definiton = ""
+gradebook = {"Seth Morris":"A"}
+student = ""
+grade = ""
 choice = ""
 while True:
     print("enter 'quit' to quit")
     choice = input()
     if choice=="new":
-        print("Please enter the word you wish to add")
-        word = input()
-        print("Please enter the definition of "+word)
-        definition = input()
-        spnsh[word] = [definition]
+        print("Please enter name of the student you wish to add")
+        student = input()
+        print("Please enter the grade of "+word)
+        grade = input()
+        gradebook[student] = [grade]
     elif choice=="print":
-        for i in spnsh:
+        for i in gradebook:
             print(i)
-    elif choice=="definition":
-        print("Which word would you like the definition of?")
-        word = input()
-        definition = spnsh[word]
-        print(definition)
+    elif choice=="grade":
+        print("Which student's grade you like?")
+        student = input()
+        grade = gradebook[student]
+        print(grade)
     elif choice=="quit":
         break
     else:
