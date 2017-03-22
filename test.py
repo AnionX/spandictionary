@@ -1,5 +1,6 @@
 gradebook = {"Seth Morris":"A"}
 student = ""
+assignment = ""
 grade = ""
 choice = ""
 while True:
@@ -8,9 +9,9 @@ while True:
     if choice=="new":
         print("Please enter name of the student you wish to add")
         student = input()
-        print("Please enter the grade of "+word)
-        grade = input()
-        gradebook[student] = [grade]
+        print("Please enter the assignment for "+student)
+        assignment = input()
+        gradebook[student] = [assignment]
     elif choice=="print":
         for i in gradebook:
             print(i)
